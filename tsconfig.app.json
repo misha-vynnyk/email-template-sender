@@ -6,14 +6,19 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "composite": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
     "jsx": "react-jsx",
+
+    /* Type Roots for custom declarations */
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"
+    ],
 
     /* Linting */
     "strict": true,

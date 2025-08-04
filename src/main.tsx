@@ -1,15 +1,4 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import { TemplateProvider } from "./context/TemplateContext.tsx";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Root } from "./Root";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <TemplateProvider>
-      <App />
-      <ToastContainer />
-    </TemplateProvider>
-  </React.StrictMode>
-);
+ReactDOM.createRoot(document.getElementById("root")!).render(<Root />);
